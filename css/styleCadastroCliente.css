@@ -1,9 +1,4 @@
-header{
-    text-align: center;
-    font-family: Verdana;
-    color: aquamarine;
-    font-size: 25px;
-}
+
 
 body{
     font-family:Verdana;
@@ -13,7 +8,7 @@ body{
 }
 
 h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .conteiner{

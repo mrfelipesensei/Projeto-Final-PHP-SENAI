@@ -10,13 +10,10 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <header>
-        Cliente
-    </header>
 
     <main>
         <div class="conteiner">
-            <h1>Cadastro</h1>
+            <h1>Cadastro do Cliente</h1>
             <form action="../controller/cadastarClienteController.php" method="post">
                 
                 <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="inputs">
