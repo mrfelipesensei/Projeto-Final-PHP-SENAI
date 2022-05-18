@@ -35,7 +35,7 @@
                 echo   "<td>{$cliente['sexo']}</td>";
                 echo   "<td>{$cliente['datanasc']}</td>";
                 echo   "<td><a href='formAlterarCliente.php?telefone={$cliente['telefone']}'>Alterar</a></td>";
-                echo   "<td><a href='#'>Excluir</a></td>";
+                echo   "<td><a href='../controller/excluirClienteController.php?telefone={$cliente['telefone']}' onclick='return excluir()'>Excluir</a></td>";
                 echo   "</tr>";
             }
 
@@ -47,5 +47,18 @@
 
     </table>
     
+    <script>
+        function excluir(){
+            var ok = confirm('Você está certo disso?')
+
+            if (ok){
+                return true
+            } else {
+                return false
+            }
+        }
+    </script>
+
+
 </body>
 </html>

@@ -19,7 +19,9 @@
     $ok = $clienteDAO->alterarCliente($clienteDTO);
 
     if ($ok) {
-        echo "Deu bom";
+        echo "<script> alert('Alterado com sucesso') 
+                        window.location = '../view/listarAllCliente.php'
+        </script>";
     } else{
         echo "Não deu bom";
     }
