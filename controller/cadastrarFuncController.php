@@ -25,7 +25,10 @@ $funcionarioDAO = new funcionarioDAO();
 $ok = $funcionarioDAO->cadastrarFuncionario($funcionarioDTO);
 
 if ($ok) {
-    echo "Deu bom";
+    //echo "Deu bom";
+    echo "<script> alert('Cadastrado com sucesso') 
+                        window.location = '../view/index.php'
+        </script>";
 } else {
     echo "Não deu bom";
 }

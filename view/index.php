@@ -9,16 +9,27 @@ include '../login/validaLogin.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/styleIndex.css">
+
     <title>Página Inicial</title>
+
 </head>
 <body>
-    <?php
-        echo "Usuário: ", $_SESSION['usuario']," <br>";
-        echo "Perfil: ", $_SESSION['perfil']," <br>";
-    ?>
-    <a href="../view/cadastroCliente.php">Cadastrar Cliente</a>
-    <a href="../view/listarAllCliente.php">Listar Cliente</a>
-    <a href="../view/formCadastrarFunc.php">Cadastrar Funcionário</a>
-    <a href="../controller/logoffController.php">Logout</a>
+    <div class="conteiner">
+        <?php
+            echo "Usuário: ", $_SESSION['usuario']," <br>";
+            echo "Perfil: ", $_SESSION['perfil']," <br>";
+        ?>
+
+        <div>
+            <?php
+                include '../view/menu.php';
+            ?>
+        </div>
+        
+        <a href="../controller/logoffController.php">Logout</a>
+    </div>
+    
 </body>
 </html>
