@@ -1,5 +1,5 @@
 <?php
-include 'login/validaLogin.php';
+include '../login/validaLogin.php';
 ?>
 
 
@@ -13,11 +13,12 @@ include 'login/validaLogin.php';
 </head>
 <body>
     <?php
-        echo "Usuário", $_SESSION['usuario'];
-        echo "Perfil", $_SESSION['perfil'];
+        echo "Usuário: ", $_SESSION['usuario']," <br>";
+        echo "Perfil: ", $_SESSION['perfil']," <br>";
     ?>
     <a href="../view/cadastroCliente.php">Cadastrar Cliente</a>
     <a href="../view/listarAllCliente.php">Listar Cliente</a>
+    <a href="../view/formCadastrarFunc.php">Cadastrar Funcionário</a>
     <a href="../controller/logoffController.php">Logout</a>
 </body>
 </html>
